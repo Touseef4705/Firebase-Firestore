@@ -1,0 +1,121 @@
+/* style.css */
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    /* align-items: center;
+    height: 100vh; */
+    padding-top: 50px;
+    color: #333;
+}
+
+/* Main Container */
+.container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Input and Button Container */
+.input-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+/* Input Field Styling */
+#todo_input {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+/* Add Button Styling */
+#todo_add_btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#todo_add_btn:hover {
+    background-color: #218838;
+}
+
+/* Todo List Styling */
+.list-container {
+    list-style: none;
+}
+
+#todo_list {
+    list-style: none;
+    padding: 0;
+}
+
+#todo_list li {
+    padding: 15px;
+    font-size: 16px;
+    background: #f9f9f9;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#todo_list li:last-child {
+    border-bottom: none;
+}
+
+/* Task Item Styling */
+.task {
+    flex: 1;
+}
+
+/* Task Action Buttons */
+#todo_list li button {
+    padding: 5px 10px;
+    /* margin-left: 5px; */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#todo_list li .edit-btn {
+    display: flex;
+    background-color: #ffc107;
+    color: white;
+}
+
+#todo_list li .edit-btn:hover {
+    background-color: #e0a800;
+}
+
+#todo_list li .delete-btn {
+    background-color: #dc3545;
+    color: white;
+}
+
+#todo_list li .delete-btn:hover {
+    background-color: #c82333;
+}
